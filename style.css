@@ -1,0 +1,208 @@
+@font-face {
+	font-family: 'Campanella';
+	src: url('./media/fonts/campanella.eot'); /* IE 9 Compatibility Mode */
+	src: url('./media/fonts/campanella.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./media/fonts/campanella.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./media/fonts/campanella.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./media/fonts/campanella.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./media/fonts/campanella.svg#campanella') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('./media/fonts/gilroy-light.eot'); /* IE 9 Compatibility Mode */
+	src: url('./media/fonts/gilroy-light.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./media/fonts/gilroy-light.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./media/fonts/gilroy-light.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./media/fonts/gilroy-light.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./media/fonts/gilroy-light.svg#gilroy-light') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+body{
+	background-color: #1A5B35;
+}
+
+p{
+	margin:0;
+}
+
+.container{
+	width: 100%;
+	heigth: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.content{
+	max-width:662px;
+	text-align:center;
+}
+
+.title{
+	font-family:Campanella;
+	font-size: 72px;
+	line-height: 115px;
+	color:#D6BD84;
+}
+
+.desc{
+	font-family: Gilroy; 
+	font-size: 18px;
+	line-height: 22px;
+	color: #FFFFFF;
+}
+
+.sign{
+	display:flex;
+	justify-content:center;
+}
+.sign p{
+	font-family: Gilroy; 
+	font-size: 20px;
+	font-weight: bolt;
+	color: #FFFFFF;
+	margin-top: 15px;
+}
+
+.footer{
+	margin-top: 50px;
+}
+
+.list2{
+	position: absolute;
+	right: 0;
+	top: 40px;
+}
+
+.list3{
+	position: absolute;
+	left: 0;
+	top: 0px;
+}
+
+.list4{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.music{
+	position: absolute;
+	bottom: 70px;
+	}
+.on-music{
+	display: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+	.music{
+		top: 20px;
+		right: 20px;
+		width: 40px;
+		height: 40px;
+	}
+
+
+	body{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.content{
+		font-size: 10px;
+		text-align: center;
+	}
+
+	.list2{
+		width: 100px;
+		height: 80px;
+
+	}
+
+	.list3{
+		width: 100px;
+		height: 180px;
+	}
+
+	.list4{
+		width: 100px;
+		height: 60px;
+
+	}
+
+	.footer{
+		width: 130px;
+		height: 40px;
+	}
+
+	.sign{
+		justify-content:center;
+		text-align: center;
+	}
+
+	.list1{
+		width:60px;
+		height:55px;
+	}
+}
+
+@media screen and (max-width:760px){
+	.list4, .list2 {
+		display: none;
+	}
+
+	.music{
+		right: 40px;
+		top: 32px;
+	}
+
+	.list1, .list3 .footer img{
+		width: 90px;
+	}
+
+	.desc{
+		font-size: 16px;
+		line-height: 19px;
+	}
+	.content{
+		margin: 100px 16px 0 16px;
+	}
+	.title{
+		font-size: 52px;
+		line-height: 83px;
+	}
+	.container{
+		height: auto;
+	}
+	.sign p{
+		font-size: 16px;
+	}
+
+	.on-music{
+		display: block;
+		position: absolute;
+		/*height: 22px;*/
+		/*width: 58px;*/
+		right: 40px;
+		top: 8px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
